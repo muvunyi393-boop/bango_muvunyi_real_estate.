@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rwanda Real Estate</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Hero -->
+  <header class="bg-gray-900 text-white p-12 text-center">
+    <h1 class="text-4xl font-bold">🏡 Rwanda Real Estate</h1>
+    <p class="mt-4 text-lg">Find your dream home in Kigali and beyond.</p>
+    <button class="mt-6 px-6 py-3 bg-yellow-500 text-black rounded-lg shadow-lg hover:bg-yellow-400">
+      Browse Listings
+    </button>
+  </header>
+
+  <!-- Listings -->
+  <section class="p-8">
+    <h2 class="text-2xl font-bold mb-6">🔥 Featured Properties</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Modern 3-Bedroom Apartment</h3>
+          <p class="text-gray-600">Kigali - Gasabo</p>
+          <p class="text-yellow-600 font-bold">$120,000</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1613977257365-37ed534e9d1f" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Luxury Villa with Pool</h3>
+          <p class="text-gray-600">Kigali - Kicukiro</p>
+          <p class="text-yellow-600 font-bold">$450,000</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1600585154084-4e1b4b46d5f7" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Affordable Family House</h3>
+          <p class="text-gray-600">Kigali - Nyarutarama</p>
+          <p class="text-yellow-600 font-bold">$75,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos -->
+  <section class="p-8 bg-gray-100">
+    <h2 class="text-2xl font-bold mb-6">🎥 Property Tours</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <iframe class="w-full h-64 rounded-xl shadow-lg" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+      <iframe class="w-full h-64 rounded-xl shadow-lg" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+      <iframe class="w-full h-64 rounded-xl shadow-lg" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="p-8">
+    <h2 class="text-2xl font-bold mb-6">💬 Happy Clients</h2>
+    <div class="space-y-6">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <p>“We found our dream house in Kigali thanks to Rwanda Real Estate. Everything was smooth!” – Jean & Aline</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <p>“Professional service and so many listings. Highly recommended!” – David, Kigali</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer class="bg-gray-900 text-white text-center p-8">
+    <h2 class="text-2xl font-bold">📞 Contact Us</h2>
+    <p>Email: info@rwandarealestate.com</p>
+    <p>Phone: +250 784 854 951</p>
+    <a href="https://wa.me/250784854951" class="mt-4 inline-block bg-green-500 px-6 py-2 rounded-lg shadow hover:bg-green-400">
+      Chat on WhatsApp
+    </a>
+  </footer>
+
+</body>
+</html>
