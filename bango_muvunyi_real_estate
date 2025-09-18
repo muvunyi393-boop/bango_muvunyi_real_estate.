@@ -1,0 +1,6 @@
+rwanda-real-estate/
+ ┣ index.html
+ ┣ package.json
+ ┗ src/
+    ┣ main.jsx
+    ┗ RealEstateApp.jsx
