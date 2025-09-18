@@ -1,0 +1,117 @@
+import React from "react";
+
+export default function RealEstateApp() {
+  const listings = [
+    {
+      id: 1,
+      title: "Modern 3-Bedroom Apartment in Kigali",
+      price: "$120,000",
+      location: "Kigali - Gasabo",
+      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      video: "https://www.youtube.com/embed/tgbNymZ7vqY"
+    },
+    {
+      id: 2,
+      title: "Luxury Villa with Swimming Pool",
+      price: "$450,000",
+      location: "Kigali - Kicukiro",
+      image: "https://images.unsplash.com/photo-1613977257365-37ed534e9d1f",
+      video: "https://www.youtube.com/embed/tgbNymZ7vqY"
+    },
+    {
+      id: 3,
+      title: "Affordable Family House",
+      price: "$75,000",
+      location: "Kigali - Nyarutarama",
+      image: "https://images.unsplash.com/photo-1600585154084-4e1b4b46d5f7",
+      video: "https://www.youtube.com/embed/tgbNymZ7vqY"
+    }
+  ];
+
+  return (
+    <div>
+      {/* Hero Section */}
+      <header className="bg-gray-900 text-white p-12 text-center">
+        <h1 className="text-4xl font-bold">🏡 Rwanda Real Estate</h1>
+        <p className="mt-4 text-lg">
+          Find your dream home in Kigali and beyond.
+        </p>
+        <button className="mt-6 px-6 py-3 bg-yellow-500 text-black rounded-lg shadow-lg hover:bg-yellow-400">
+          Browse Listings
+        </button>
+      </header>
+
+      {/* Featured Listings */}
+      <section className="p-8">
+        <h2 className="text-2xl font-bold mb-6">🔥 Featured Properties</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {listings.map((listing) => (
+            <div
+              key={listing.id}
+              className="bg-white rounded-xl shadow-lg overflow-hidden"
+            >
+              <img
+                src={listing.image}
+                alt={listing.title}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold">{listing.title}</h3>
+                <p className="text-gray-600">{listing.location}</p>
+                <p className="text-yellow-600 font-bold">{listing.price}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Video Feed */}
+      <section className="p-8 bg-gray-100">
+        <h2 className="text-2xl font-bold mb-6">🎥 Property Tours</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {listings.map((listing) => (
+            <iframe
+              key={listing.id}
+              className="w-full h-64 rounded-xl shadow-lg"
+              src={listing.video}
+              title={listing.title}
+              allowFullScreen
+            ></iframe>
+          ))}
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="p-8">
+        <h2 className="text-2xl font-bold mb-6">💬 Happy Clients</h2>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-xl shadow">
+            <p>
+              “We found our dream house in Kigali thanks to Rwanda Real Estate.
+              Everything was smooth!” – Jean & Aline
+            </p>
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow">
+            <p>
+              “Professional service and so many listings. Highly recommended!”
+              – David, Kigali
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <footer className="bg-gray-900 text-white text-center p-8">
+        <h2 className="text-2xl font-bold">📞 Contact Us</h2>
+        <p>Email: info@rwandarealestate.com</p>
+        <p>Phone: +250 784 854 951</p>
+        <a
+          href="https://wa.me/250784854951"
+          className="mt-4 inline-block bg-green-500 px-6 py-2 rounded-lg shadow hover:bg-green-400"
+        >
+          Chat on WhatsApp
+        </a>
+      </footer>
+    </div>
+  );
+}
